@@ -1,0 +1,118 @@
+:root {
+    --button-color: hsl(25, 97%, 53%);
+    --title-color: hsl(0, 0%, 100%);
+    --paragraph-color: hsl(217, 12%, 63%);
+    --circle-choose-color: hsl(216, 12%, 54%);
+    --circle-color: hsl(213, 19%, 18%);
+    --bg-color: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: "Overpass";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--paragraph-color);
+}
+
+.card{
+    width: 340px;
+    height: 360px;
+    border-radius: 1rem;
+    background-color: hsl(213, 27%, 13%);
+}
+
+#rating-card{
+    padding: 1.5rem;
+}
+
+.rating-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.star{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--circle-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 1rem 0rem;
+    color: white;
+}
+
+.rating-card p{
+    font-size:xx-small;
+}
+
+button{
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 2.8rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+#thank-you-card{
+    text-align: center;
+    padding: 2rem 1rem;
+    display: none;
+}
+
+.img-container img{
+    width: 45%;
+}
+
+.rated-text{
+    background-color: var(--circle-color);
+    color: var(--button-color);
+    width: 60%;
+    margin: auto;
+    padding: .4rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.thank-you{
+    margin: 2rem 0rem 1rem 0rem;
+    color: white;
+}
+
+.thank-you-card p{
+    font-size: 8px;
+}
+
+.number-button{
+    cursor: pointer;
+}
+
+.number-button:hover{
+    background-color: var(--button-color);
+    color: white;
+}
+
+.number-button:focus{
+    background-color: var(--circle-choose-color);
+}
+
+button:hover{
+    background-color: white;
+    color: var(--button-color);
+}
